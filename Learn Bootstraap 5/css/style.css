@@ -1,0 +1,232 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+/* start navbar */
+.navbar {
+    background-color: transparent;
+}
+.navbar .navbar-brand{
+    color: rgba(255, 255, 255, 0.5)
+}
+.navbar .nav-link{
+   color: rgba(255, 255, 255, 0.5);
+
+}
+/* end navbar */
+/* start header */
+.header
+{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), 
+    url(../images/bg-masthead.jpg);
+    background-size: cover;
+    position: relative;
+}
+.header:after{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.header .header-info{
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.header .header-info h1{
+    font-size: 90px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.header .header-info p{
+    width: 70%;
+    margin: auto;
+    font-size: 19px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.header .header-info button{
+    background-color: #64a19d;
+    border: 0;
+}
+@media (max-width:575px){
+    .header .header-info h1{
+        font-size: 50px;
+    }
+    .header .header-info p{
+        width: 100%;
+    }
+}
+/* end header */
+/* start about */
+.about{
+    background:linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%)
+}
+.about-header p{
+    width: 50%;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.about-header p a{
+    color: #64a19d;
+}
+.about img{
+    width: 70%;
+    margin-top: 30px;
+}
+@media (max-width:991px){
+    .about-header p{
+        width: 90%;
+    }
+    .about img{
+        width: 80%;
+    }
+}
+/* end about */
+/* start projects */
+.projects{
+    padding-top: 100px;
+}
+.projects .projects-img img{
+width: 100%;
+}
+.projects-info{
+    top: 50%;
+    transform: translate(0 , -50%);
+    height: 150px;
+    border-left: 8px solid #64a19d;
+}
+.projects-info p{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+.projects .info{
+    padding-left:0;
+    padding-right:0;
+}
+@media (max-width:991px){
+    .projects-info {
+        top: 0;
+        transform: translate(0);
+    }
+    .projects-info{
+        border: 0;
+    }
+}
+/* end projects */
+/* start portflio */
+.portflio{
+    padding: 50px 0;
+}
+.portflio img{
+    width: 100%;
+}
+.portflio-info {
+    height: 100%;
+    position: relative;
+   background-color: #000;
+
+}
+.portflio-info-desc{
+    position: absolute;
+    top: 50%; 
+    transform: translate(0 , -50%); 
+}
+@media (max-width:768px){
+    .portflio-info-desc{
+        position: static;
+        transform: translate(0);
+    }
+}
+.portflio-info-desc p{
+    width: 80%;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+.portflio .info{
+    padding-left: 0;
+    padding-right: 0;
+}
+/* end portflio */
+/* start contact */
+.contact{
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), 
+    url("../images/bg-signup.jpg");
+background-size: cover;
+padding: 150px 0;
+position: relative;
+}
+
+.contact-info{
+    z-index: 999;
+    position: relative;
+}
+
+.contact-info h3{
+    font-size: 35px;
+}
+@media (max-width:575px){
+    .contact-info h3{
+        font-size: 30px;
+    }
+}
+.input-group button{
+    background-color: #64a19d;
+    color: rgba(255 , 255 , 255 , .7);
+    left: 20px;
+}
+.input-group{
+    width: 60%;
+    margin: auto;
+}
+.input-group input , .input-group button{
+    padding: 15px;
+}
+@media (max-width:768px){
+    .input-group{
+        width: 80%;
+    }
+}
+/* end contact */
+/* start social */
+.social{
+    background: #000;
+    padding: 50px 0 ;
+}
+.social-card {
+    border-bottom: 5px solid #64a19d;
+    border-radius: 10px;
+}
+.social-card i{
+    color: #64a19d;
+}
+.social-card hr{
+    width: 50px;
+    margin: auto;
+}
+.social-card span{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5) ;
+}
+.social-card span a{
+    color: #64a19d;
+}
+.social .icon{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    line-height: 50px;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* end social */
+/* start copyright */
+.copyright{
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    color: rgba(255 , 255 , 255 , .7);
+}
+/* end copyright */
